@@ -48,13 +48,15 @@ main {
   width: 34.5rem;
 }
 
+/* Expense Card Header */
 .expense-card-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background: var(--soft-red);
-  padding: 2rem 1rem;
+  padding: 2rem;
   border-radius: 1rem;
+  margin-bottom: 2rem;
 }
 
 .expense-card-header .balance-details {
@@ -69,6 +71,7 @@ main {
   font-size: 1.5rem;
   font-weight: 400;
   color: #fff;
+  margin-bottom: 0.5rem;
 }
 
 .expense-card-header .balance-details p {
@@ -79,4 +82,114 @@ main {
 
 .expense-card-header img {
   width: 6rem;
+}
+
+/* Expense Card Body */
+.expense-card-body {
+  background: var(--very-pale-orange);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.expense-card-body h2 {
+  font-size: 2.4rem;
+  margin-bottom: 3rem;
+}
+
+.expense-card-body .days {
+  height: 18rem;
+  display: flex;
+  align-items: end;
+  margin-bottom: 2rem;
+}
+
+.border-bottom {
+  width: 97%;
+  height: 2px;
+  background: var(--cream);
+}
+
+.expense-card-body .days .day {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.expense-card-body .days .day:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.expense-card-body .days .day p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--medium-brown);
+}
+
+.expense-card-body .days .day .bar-wrapper {
+  width: 3.3rem;
+}
+
+.expense-card-body .days .day .bar-wrapper div {
+  background: black;
+  color: #fff;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 1.8rem;
+  margin-bottom: 0.75rem;
+  visibility: hidden;
+}
+.expense-card-body .days .day .bar-wrapper:hover div {
+  visibility: visible;
+}
+
+.expense-card-body .days .day .bar-wrapper div p {
+  color: #fff;
+}
+
+.expense-card-body .days .day .bar-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.expense-card-body .days .day .bar-wrapper .bar {
+  display: block;
+  width: 3rem;
+  border-radius: 0.25rem;
+  margin-bottom: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.expense-card-body .days .day .bar-wrapper .bar:hover {
+  opacity: 0.7;
+}
+
+.expense-card-body .days .day.monday .bar-wrapper .bar {
+  height: 5.1rem;
+  background: var(--soft-red);
+}
+.expense-card-body .days .day.tuesday .bar-wrapper .bar {
+  height: 8.9rem;
+  background: var(--soft-red);
+}
+.expense-card-body .days .day.wednesday .bar-wrapper .bar {
+  height: 15rem;
+  background: var(--cyan);
+}
+.expense-card-body .days .day.thursday .bar-wrapper .bar {
+  height: 8.9rem;
+  background: var(--soft-red);
+}
+.expense-card-body .days .day.friday .bar-wrapper .bar {
+  height: 6.7rem;
+  background: var(--soft-red);
+}
+.expense-card-body .days .day.saturday .bar-wrapper .bar {
+  height: 12.4rem;
+  background: var(--soft-red);
+}
+.expense-card-body .days .day.sunday .bar-wrapper .bar {
+  height: 7.5rem;
+  background: var(--soft-red);
 }
