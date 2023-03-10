@@ -103,12 +103,6 @@ main {
   margin-bottom: 2rem;
 }
 
-.border-bottom {
-  width: 97%;
-  height: 2px;
-  background: var(--cream);
-}
-
 .expense-card-body .days .day {
   cursor: pointer;
   display: flex;
@@ -192,4 +186,45 @@ main {
 .expense-card-body .days .day.sunday .bar-wrapper .bar {
   height: 7.5rem;
   background: var(--soft-red);
+}
+
+.border-bottom {
+  width: 97%;
+  height: 2px;
+  background: var(--cream);
+  margin-bottom: 2rem;
+}
+
+/* Summary */
+.summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.summary-stats-left p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--medium-brown);
+  margin-bottom: 0.5rem;
+}
+
+.summary-stats-left span {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--dark-brown);
+}
+
+.summary-stats-right p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--dark-brown);
+  text-align: right;
+  margin-bottom: 0.5rem;
+}
+
+.summary-stats-right span {
+  color: var(--medium-brown);
+  font-weight: 400;
+  font-size: 1.5rem;
 }
