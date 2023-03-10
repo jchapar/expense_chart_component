@@ -1,0 +1,82 @@
+:root {
+  --soft-red: hsl(10, 79%, 65%);
+  --cyan: hsl(186, 34%, 60%);
+  --dark-brown: hsl(25, 47%, 15%);
+  --medium-brown: hsl(28, 10%, 53%);
+  --cream: hsl(27, 66%, 92%);
+  --very-pale-orange: hsl(33, 100%, 98%);
+}
+
+/* Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--cream);
+}
+
+img {
+  width: 100%;
+}
+
+/* General Styles*/
+.container {
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Expense Card */
+.expense-card {
+  width: 34.5rem;
+}
+
+.expense-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--soft-red);
+  padding: 2rem 1rem;
+  border-radius: 1rem;
+}
+
+.expense-card-header .balance-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.expense-card-header .balance-details small {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+.expense-card-header .balance-details p {
+  color: #fff;
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+
+.expense-card-header img {
+  width: 6rem;
+}
